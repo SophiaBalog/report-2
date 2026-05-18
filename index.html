@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>PixelLogic - Спроектуй своє майбутнє в ITs</title>
+</head>
+<body>
+
+        <header class="header" id="header">
+        <div class="container header__container">
+            <div class="logo">Pixel<b>Logic</b></div>
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="#about" class="nav__link">Опис</a></li>
+                    <li><a href="#courses" class="nav__link">Курси</a></li>
+                    <li><a href="#reviews" class="nav__link">Відгуки</a></li>
+                </ul>
+            </nav>
+             <button class="burger" id="burger" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero__grid">
+                <div class="hero__content">
+                    <h1 class="hero__title">Спроектуй своє майбутнє в IT</h1>
+                    <p class="hero__subtitle">Опануй мистецтво UI/UX дизайну та Frontend-розробки через практику</p>
+                </div>
+                <div class="hero__visual">
+                    <div class="circle circle--ui"><span>UI</span><small>USER INTERFACE</small></div>
+                    <div class="circle circle--ux"><span>UX</span><small>USER EXPERIENCE</small></div>
+                    <div class="circle circle--fe"><span>FE</span><small>FRONT-END</small></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info section" id="about">
+            <div class="container">
+                <span class="section__label">ОПИС КУРСУ</span>
+                
+                <div class="info__grid">
+                    <div class="info__col">
+                        <h3>Для кого цей курс?</h3>                        
+                        <p><strong>Абітурієнти та студенти:</strong> Ті, хто хоче зрозуміти основи IT та обрати напрямок дизайну або розробки перед вступом чи початком кар'єри.</p>                        
+                        <p><strong>Дизайнери-початківці:</strong> Користувачі, які хочуть опанувати Figma на професійному рівні — від базових фігур до складних компонентів та автолейаутів.</p>                        
+                        <p><strong>Майбутні Frontend-розробники:</strong> Хто прагне навчитися створювати не просто картинку, а розуміти, як дизайн перетворюється на робочий код.</p>                        
+                        <p><strong>Креативні маркетологи та менеджери:</strong> Ті, кому важливо навчитися створювати візуальний контент для соцмереж, розуміти принципи побудови лендингів та ефективно взаємодіяти з технічною командою розробників.</p>
+                    </div>
+
+                    <div class="info__col">
+                        <h3>Що всередині курсу?</h3>                        
+                        <p><strong>Практика в Figma:</strong> Створення повноцінних UI-кітів, робота зі стилями, кольорами та типографікою для вебсайтів і мобільних додатків.</p>                        
+                        <p><strong>Теорія UX:</strong> Аналіз поведінки користувачів, створення інформаційної архітектури та перевірка інтерфейсів на зручність.</p>                        
+                        <p><strong>Від ідеї до прототипу:</strong> Проходження повного шляху розробки цифрового продукту — від першого начерку (wireframe) до інтерактивної моделі.</p>
+                        <p><strong>База знань 24/7:</strong> Доступ до структурованих онлайн-лекцій та конспектів без прив'язки до часу, що дозволяє навчатися у власному темпі.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="courses section" id="courses">
+            <div class="container">
+                <h2 class="section__title">Чого ми навчаємо</h2>
+                <p class="subtitle-text">Опануй повний цикл створення цифрового продукту: від першого ескізу до робочого інтерфейсу.</p>
+                <div class="courses__grid">
+                    <article class="course-card animate-on-scroll">
+                        <div class="course-card__img">
+                            <img src="img/UiUxCard.jpg" alt="Зображення UI UX дизайну ">
+                        </div>
+                        <p>Основи UI/UX дизайну в Figma</p>
+                    </article>
+                    <article class="course-card animate-on-scroll">
+                        <div class="course-card__img">
+                            <img src="img/PrototypingCard.jpg" alt="Зображення прототипування">
+                        </div>
+                        <p>Проектування досвіду та прототипування</p>
+                    </article>
+                    <article class="course-card animate-on-scroll">
+                        <div class="course-card__img">
+                            <img src="img/marketingCard.jpg" alt="Зображення маркетингу">
+                        </div>
+                        <p>Від дизайну до розробки та маркетингу</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+          <!-- тут слайдер  -->
+        <section id="reviews">
+            <h2 class="section__title">Відгуки</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <img src="img/userAvatar1.png" alt="Avatar" class="review-avatar">
+                                <div class="review-user-info">
+                                    <h4 class="review-name">Анна Коваль</h4>
+                                    <span class="review-role">Frontend розробниця</span>
+                                </div>
+                            </div>
+                            <p class="review-text">
+                                "Завдяки цьому курсу я впорядкувала свої знання та вже отримала перші замовлення на фрілансі"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <img src="img/userAvatar2.jpg" alt="Avatar" class="review-avatar">
+                                <div class="review-user-info">
+                                    <h4 class="review-name">Юлія Грибчук</h4>
+                                    <span class="review-role">UI/UX дизайнер</span>
+                                </div>
+                            </div>
+                            <p class="review-text">
+                                "Дуже сподобався формат навчання — усе чітко та зрозуміло"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <img src="img/userAvatar3.avif" alt="Avatar" class="review-avatar">
+                                <div class="review-user-info">
+                                    <h4 class="review-name">Марія Веринина</h4>
+                                    <span class="review-role">UI/UX дизайнер</span>
+                                </div>
+                            </div>
+                            <p class="review-text">
+                                "Вже під час навчання почала застосовувати знання на практиці"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <img src="img/userAvatar4.avif" alt="Avatar" class="review-avatar">
+                                <div class="review-user-info">
+                                    <h4 class="review-name">Андрій Мовчишн</h4>
+                                    <span class="review-role">Full Stack розробник</span>
+                                </div>
+                            </div>
+                            <p class="review-text">
+                                "Щиро рекомендую цей курс усім, хто хоче стартувати в IT"
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+            
+        <button class="btn-primary open-modal-btn">
+            Читати далі
+        </button>
+
+    
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__socials">
+                <a href="#">TG</a> <a href="#">IG</a> <a href="#">TK</a>
+            </div>
+            <div class="footer__copy">© 2026 PixelLogic</div>
+        </div>
+    </footer>
+
+          
+    <div id="cookieBar" class="cookie-bar">
+        <span>Ми використовуємо файли cookie.</span>
+        <button id="acceptCookies">ОК</button>
+    </div>
+
+    <button id="goTop" class="go-top">↑</button>
+
+
+    <div class="modal" id="regModal">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__content">
+            <button class="modal__close">&times;</button>
+
+            <h2>Зареєструватися щоб читати далі</h2>
+
+            <p>
+                Enter your email address to take part in our online course today
+            </p>
+
+            <form class="reg__form" id="regForm">
+                <input
+                    type="email"
+                    id="emailInput"
+                    placeholder="Email address"
+                    required
+                >
+
+                <button type="submit" class="btn-primary">
+                    START THE COURSE
+                </button>
+            </form>
+        </div>
+    </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
