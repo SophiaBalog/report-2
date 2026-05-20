@@ -30,6 +30,14 @@ const closeBtnModal = document.querySelector(".modal__close");
 const overlay = document.querySelector(".modal__overlay");
 
 
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+        header.classList.add('header--sticky');
+    } else {
+        header.classList.remove('header--sticky');
+    }
+});
+
 if (!localStorage.getItem('cookieHidden')) {
         cookieBar.classList.add('cookie-bar--show');
     }
