@@ -28,7 +28,7 @@ const btnOpenModal = document.querySelector('.open-modal-btn');
 const modal = document.querySelector("#regModal");
 const closeBtnModal = document.querySelector(".modal__close");
 const overlay = document.querySelector(".modal__overlay");
-
+const animateItems = document.querySelectorAll('.animate-on-scroll');
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 20) {
@@ -37,6 +37,20 @@ window.addEventListener('scroll', () => {
         header.classList.remove('header--sticky');
     }
 });
+
+
+if (animateItems.length > 0) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animated'); 
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    animateItems.forEach(item => { observer.observe(item); });
+}
 
 if (!localStorage.getItem('cookieHidden')) {
         cookieBar.classList.add('cookie-bar--show');
