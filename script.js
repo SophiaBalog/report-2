@@ -39,6 +39,20 @@ window.addEventListener('scroll', () => {
 });
 
 
+regForm.addEventListener('submit', (event) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+    
+    if (!emailRegex.test(emailInput.value)) {
+        event.preventDefault();
+        emailInput.style.borderColor = 'red';
+        alert('Будь ласка, введіть коректну email адресу!');
+    } else {
+        emailInput.style.borderColor = 'green';
+        alert('Успішна реєстрація на курс!');
+        closeModal(); //
+    }
+});
+
 if (animateItems.length > 0) {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
