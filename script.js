@@ -49,7 +49,7 @@ regForm.addEventListener('submit', (event) => {
     } else {
         emailInput.style.borderColor = 'green';
         alert('Успішна реєстрація на курс!');
-        closeModal(); //
+        closeModal();
     }
 });
 

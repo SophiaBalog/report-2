@@ -10,7 +10,7 @@
     --container-width: 1200px;
 }
 
-/* Base Reset */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -38,7 +38,7 @@ body {
     padding: 0 20px;
 }
 
-/* Header & Navigation */
+
 .header {
     padding: 15px 0;
     position: sticky;
@@ -85,7 +85,7 @@ body {
     color: var(--primary-yellow);
 }
 
-/* Hero Section */
+
 .hero {
     background: linear-gradient(180deg, #fff9e6 0%, #ffffff 100%);
     padding: 60px 0 100px;
@@ -113,7 +113,7 @@ body {
     align-items: center;
 }
 
-/* Interactive Circles */
+
 .circle {
     position: absolute;
     border-radius: 50%;
@@ -174,7 +174,7 @@ body {
     z-index: 1;
 }
 
-/* Course Cards */
+
 .courses {
     padding: 80px 0;
 }
@@ -226,7 +226,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* Registration Form */
+
 .reg {
     padding: 60px 0;
 }
@@ -284,7 +284,6 @@ input[type="email"]:focus {
 
 }
 
-/* Media Queries */
 @media (max-width: 992px) {
     .hero__grid {
         gap: 30px;
@@ -353,16 +352,13 @@ input[type="email"]:focus {
     line-height: 1.4;
 }
 
-
-
-/* Основний контейнер футера */
 .footer {
     padding: 30px 0;
     border-top: 1px solid #e0e0e0;
     background-color: #ffffff;
 }
 
-/* Флекс-контейнер для вирівнювання */
+
 .footer__container {
     display: flex;
     justify-content: space-between;
@@ -404,14 +400,14 @@ input[type="email"]:focus {
 }
 
 
-/* Загальні налаштування секції */
+
 .info.section {
     padding: 80px 0;
     background-color: #fff;
     font-family: 'Inter', sans-serif;
 }
 
-/* Мітка "ОПИС КУРСУ" */
+
 .section__label {
     display: block;
     font-weight: 700;
@@ -428,7 +424,6 @@ input[type="email"]:focus {
     gap: 60px;
 }
 
-/* Заголовки всередині колонок */
 .info__col h3 {
     font-size: 32px;
     font-weight: 600;
@@ -602,13 +597,12 @@ input[type="email"]:focus {
     z-index: 1000;
 }
 
-/* активна модалка */
 .modal.active {
     opacity: 1;
     visibility: visible;
 }
 
-/* затемнення */
+
 .modal__overlay {
     position: absolute;
     inset: 0;
@@ -618,7 +612,7 @@ input[type="email"]:focus {
     backdrop-filter: blur(4px);
 }
 
-/* контент */
+
 .modal__content {
     position: relative;
 
@@ -640,12 +634,12 @@ input[type="email"]:focus {
     z-index: 2;
 }
 
-/* анімація появи */
+
 .modal.active .modal__content {
     transform: translateY(0);
 }
 
-/* кнопка закриття */
+
 .modal__close {
     position: absolute;
 
@@ -664,7 +658,6 @@ input[type="email"]:focus {
     margin: 30px auto 30px;
 }
 
-/* форма */
 .reg__form {
     display: flex;
     flex-direction: column;
